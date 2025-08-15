@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+<p id="ketqua"></p>
+<script>
+    let n1 =0;
+    let n2 =1;
+    let ketqua = n1+" "+n2+" ";
+    for (let i=1;i<=20;i++){
+        let next= n1+n2;
+        ketqua += next+ " ";
+        n1=n2;
+        n2=next;
+    }
+    document.write(ketqua);
+</script>
+</body>
+</html>
