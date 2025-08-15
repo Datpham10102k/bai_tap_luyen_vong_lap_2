@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<label for="songuyen">Nhập số nguyên dương:</label>
+<input type="number" id="songuyen">
+<button onclick="giaithua()">Tính giai thừa</button>
+<br>
+<table border="1" width="200"><br>
+<td id="result">Kết quả là</td>
+
+    <script>
+        function giaithua(){
+        let sonhap = parseInt(document.getElementById("songuyen").value);
+        let ketqua = 1;
+        for (i=1;i<=sonhap;i++){
+            ketqua *= i;
+        }
+        if (sonhap<=0){
+            document.getElementById("result").innerText = "Không hợp lệ";
+        }else {
+            document.getElementById('result').innerHTML = ketqua;
+        }
+        }
+    </script>
+</table>
+
+</body>
+</html>
